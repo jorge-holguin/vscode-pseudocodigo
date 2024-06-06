@@ -3,190 +3,156 @@
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/willumz.generic-pseudocode)](https://marketplace.visualstudio.com/items?itemName=willumz.generic-pseudocode)
 <!-- [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/willumz.generic-pseudocode)](https://marketplace.visualstudio.com/items?itemName=willumz.generic-pseudocode) -->
 
-A simple extension for syntax highlighting of generic pseudocode.
+Una extensión simple para el resaltado de sintaxis de pseudocódigo genérico.
 
-Syntax highlighting exists for multiple variants of common pseudocode keywords, allowing you to use your own style and not confining you to a specific format.
+El resaltado de sintaxis existe para múltiples variantes de palabras clave de pseudocódigo comunes, lo que te permite usar tu propio estilo sin limitarte a un formato específico.
 
-## Table of Contents:
-- [Features](#Features)
-    - [Syntax Highlighting](#Syntax-Highlighting)
-    - [Snippets](#Snippets)
-    - [Customisable Keywords](#Customisable-Keywords)
-- [Known Bugs](#Known-Bugs)
-- [Release Notes](#Release-Notes)
+## Tabla de Contenidos:
+- [Pseudocode](#pseudocode)
+  - [Tabla de Contenidos:](#tabla-de-contenidos)
+  - [Características](#características)
+    - [Resaltado de Sintaxis](#resaltado-de-sintaxis)
+      - [Palabras Clave:](#palabras-clave)
+      - [Operadores:](#operadores)
+      - [Funciones:](#funciones)
+      - [Clases:](#clases)
+      - [Estructuras:](#estructuras)
+      - [Cadenas de Plantilla:](#cadenas-de-plantilla)
+    - [Fragmentos de Código](#fragmentos-de-código)
+    - [Palabras Clave Personalizables](#palabras-clave-personalizables)
 
-## Features
+## Características
 
-### Syntax Highlighting
+### Resaltado de Sintaxis
 
-The following items have syntax highlighting. Synonyms are separated by spaces.
+Los siguientes elementos tienen resaltado de sintaxis. Los sinónimos están separados por espacios.
 
-#### Keywords:
+#### Palabras Clave:
 ```
-output print e.g. output "Hello World"
-input
-if
-else
-try
-catch except
-import
-while loop
-for
-foreach
-return
-set e.g. set x = 1
-switch
-case
-break
-continue
-do
-end
+escribir imprimir e.g. escribir "Hola Mundo"
+leer
+si
+sino
+intentar
+capturar
+importar
+mientras
+para
+paracada
+retornar
+definir e.g. definir x <- 1
+segun
+caso
+romper
+continuar
+hacer
+fin
 ```
-#### Operators:
+#### Operadores:
 ```
-and &&
-or ||
-not !
-in
+y &&
+o ||
+no !
+en
 ```
-#### Functions:
+#### Funciones:
 ```
-function
-procedure
+funcion
+proceso
 e.g.
-    function say(x) do
-        print x
-    end
-    say("Hello World")
+    funcion decir(x) hacer
+    escribir x
+    fin
+decir("Hola Mundo")
 ```
-#### Classes:
+#### Clases:
 ```
-class
-extends
+clase
+extiende
 e.g.
-    class A do
-        constructor() do
-            print "Hi"
-        end
-    end
+    clase A hacer
+        constructor() hacer
+            escribir "Hola"
+        fin
+    fin
 e.g.
-    class B extends A do
-        constructor() do
-            print "Hi"
-        end
-    end
+    clase B extiende A hacer
+        constructor() hacer
+            escribir "Hola"
+        fin
+    fin
 ```
-#### Structs:
+#### Estructuras:
 ```
 struct
 e.g.
     struct A do
         
     end
+
+estructura
+e.g.
+    estructura A hacer
+    
+    fin
 ```
-#### Template Strings:
+#### Cadenas de Plantilla:
 ```
 ${}
 e.g.
-    set user = "John"
-    print "Hello, ${user}!"
+    definir usuario <- "Juan"
+    escribir "Hola, ${usuario}!"
 ```
-If Else:
+Si Sino:
 
-![If else](images/ifelse.png)
+![Si Sino](images/ifelse.png)
 
-Loops:
+Bucles:
 
-![Loops](images/loops.png)
+![Bucles](images/loops.png)
 
-Switch:
+Segun:
 
-![Switch](images/switch.png)
+![Segun](images/switch.png)
 
-Try Catch:
+Intentar Capturar:
 
-![Try catch](images/trycatch.png)
+![Intentar Capturar](images/trycatch.png)
 
-Functions:
+Funciones:
 
-![Functions](images/function.png)
+![Funciones](images/function.png)
 
-Classes:
+Clases:
 
-![Classes](images/class.png)
+![Clases](images/class.png)
 
-Structs:
+Estructuras:
 
-![Structs](images/struct.png)
+![Estructuras](images/struct.png)
 
-### Snippets
-![Snippets](images/snippets.gif)
+### Fragmentos de Código
+![Fragmentos de Código](images/snippets.gif)
 
-Note: all snippets have uppercase variants beginning with 'u'
+Nota: todos los fragmentos tienen variantes en mayúsculas que comienzan con 'u'
 
-### Customisable Keywords
-You can also define your own custom keywords in a config file.
+### Palabras Clave Personalizables
+También puedes definir tus propias palabras clave personalizadas en un archivo de configuración.
 
-If you aren't content with the predefined keywords included, you can now add your own to a `.pseudoconfig` file located in your user's home directory (`~/.pseudoconfig` or `C:\Users\{username}\.pseudoconfig`).
+Si no estás contento con las palabras clave predefinidas incluidas, ahora puedes agregar las tuyas en un archivo `.pseudoconfig` ubicado en el directorio de inicio de tu usuario (`~/.pseudoconfig` o `C:\Users\{username}\.pseudoconfig`).
 
-**To use this feature you must make sure** `editor.semanticHighlighting.enabled` **is set to** `true` **in VSCode.**
+**Para usar esta función debes asegurarte de que** `editor.semanticHighlighting.enabled` **esté configurado en** `true` **en VSCode.**
 
-The config file should contain a JSON object, with a single key `"custom"` containing an object with a single key `"keyword"` (the only scope currently supported for custom highlighting) which has a value of an array of strings, which holds your custom keywords.
+El archivo de configuración debe contener un objeto JSON, con una sola clave `"custom"` que contiene un objeto con una sola clave `"keyword"` (el único alcance actualmente soportado para el resaltado personalizado) que tiene un valor de una matriz de cadenas, que contiene tus palabras clave personalizadas.
 
-Example:
+Ejemplo:
 ```json
 {
     "custom": {
         "keyword": [
-            "customKeyword",
-            "exampleWord"
+            "palabraClavePersonalizada",
+            "ejemploPalabra"
         ]
     }
 }
 ```
-In the above example, both `customKeyword` and `exampleWord` will be highlighted as keywords.
-
-NOTE: You must reload the extension after editing the config file.
-
-NOTE: Local config files in the active directory are not currently supported. You can currently only use a global config file which is placed in the home directory.
-
-## Known Bugs
-
-- do end autocloses in variables
-
-## Release Notes
-
-### 1.4.0
-
-- Added customisable keywords
-- Added optional config file (used to define customisable keywords)
-
-### 1.3.0
-
-- Added `static`, `public`, and `private` modifiers for structs, classes, and functions
-- Added the `continue` keyword
-
-### 1.2.0
-
-- Added template strings (e.g. `"Hi ${user.name}"`)
-
-### 1.1.0
-
-- Added structs
-- Added `struct` and `structdo` snippets
-
-### 1.0.3
-
-- Fixed bug where do end would be autoclose in strings and comments
-
-### 1.0.2
-
-- Fixed bug which prevented comments in functions and procedures
-
-### 1.0.1
-
-- Minor changes to extension information
-
-### 1.0.0
-
-- Initial release with syntax highlighting and snippets for basic statements and definitions.

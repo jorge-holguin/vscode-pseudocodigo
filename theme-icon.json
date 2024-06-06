@@ -1,0 +1,10 @@
+{
+    "iconDefinitions": {
+        "_file_psc": {
+            "iconPath": "./psc-icon.png"
+        }
+    },
+    "fileExtensions": {
+        "psc": ".psc"
+    }
+}

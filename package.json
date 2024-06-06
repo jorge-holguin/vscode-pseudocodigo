@@ -1,10 +1,10 @@
 {
-    "name": "generic-pseudocode",
-    "displayName": "Pseudocode",
-    "description": "A simple extension for syntax highlighting of generic pseudocode.",
-    "publisher": "Willumz",
+    "name": "pseudocodigo",
+    "displayName": "Pseudocodigo",
+    "description": "Una extensión para resaltar la sintaxis del pseudocodigo en español",
+    "publisher": "jorgeholguin",
     "icon": "images/icon.png",
-    "version": "1.4.0",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.55.0"
     },
@@ -21,7 +21,7 @@
                     "pseudocode"
                 ],
                 "extensions": [
-                    ".pseudo"
+                    ".psc"
                 ],
                 "configuration": "./language-configuration.json"
             }
@@ -38,7 +38,15 @@
                 "language": "pseudocode",
                 "path": "./snippets.json"
             }
-        ]
+        ],
+        "icons": {
+            "fileIcons": [
+                {
+                    "iconPath": "./icons/psc-icon.png",
+                    "fileExtensions": ["psc"]
+                }
+            ]
+        }
     },
     "activationEvents": [
         "onLanguage:pseudocode"
@@ -46,7 +54,7 @@
     "main": "./out/extension.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Willumz/generic-pseudocode-vscode.git"
+        "url": "https://github.com/jorge-holguin/vscode-pseudocodigo"
     },
     "devDependencies": {
         "@types/node": "^15.0.1",

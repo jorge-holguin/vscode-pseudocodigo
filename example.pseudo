@@ -1,58 +1,68 @@
+// Definir una variable
+Definir x Como Entero <- 1
 
+// Estructura Si-Entonces-Sino
+Si x = 1 Entonces
+    Escribir "x = 1"
+SiNo
+    Escribir "x != 1"
+FinSi
 
-set x = 1
-if x == 1 do
-    print "x = 1"
-end else do
-    print "x != 1"
-end
+// Definir otra variable
+Definir y Como Entero <- 1
 
-set y = 1
-while y <= 10 do
-    print y
-    y++
-end
+// Bucle Mientras
+Mientras y <= 10 Hacer
+    Escribir y
+    y <- y + 1
+FinMientras
 
-for (set i = 1; i <= 10; i++) do
-    print i
-end
+// Bucle Para
+Para i <- 1 Hasta 10 Con Paso 1 Hacer
+    Escribir i
+FinPara
 
-foreach (i in iterable) do
-    print i
-end
+// Bucle Para Cada
+Para Cada i De iterable Hacer
+    Escribir i
+FinPara
 
-set a = "x"
-switch(a) do
-    case "x":
-        print "a = 'x'"
-        break
-    case "y":
-        print "a = 'y'"
-        break
-end
+// Estructura de selección múltiple (Segun)
+Definir a Como Caracter <- "x"
+Segun a Hacer
+    "x":
+        Escribir "a = 'x'"
+    "y":
+        Escribir "a = 'y'"
+FinSegun
 
-try do
+// Estructura de intento-captura
+Intenta
     MakeError()
-end catch(err) do
-    print err
-end
+Capturar(err)
+    Escribir err
+FinCaptura
 
-function Add(a, b) do
-    return a + b
-end
+// Definir una función
+Funcion Sumar(a, b) Con Retorno : Entero
+    Retornar a + b
+FinFuncion
 
-procedure HelloWorld() do
-    print "Hello World"
-end
+// Definir un procedimiento
+Proceso HolaMundo()
+    Escribir "Hola Mundo"
+FinProceso
 
-class A do
-    constructor() do
-        print "Constructed"
-    end
-end
+// Definir una clase
+Clase A
+    Constructor()
+        Escribir "Constructed"
+    FinConstructor
+FinClase
 
-class A extends B do
-    constructor() do
-        print "Constructed"
-    end
-end
+// Definir una clase que extiende de otra clase
+Clase A Extiende B
+    Constructor()
+        Escribir "Constructed"
+    FinConstructor
+FinClase

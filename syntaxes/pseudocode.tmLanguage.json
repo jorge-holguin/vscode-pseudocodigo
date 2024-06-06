@@ -45,23 +45,23 @@
 			"patterns": [
 				{
 					"name": "keyword.control.pseudocode",
-					"match": "(?i)\\b(if|else|try|catch|except|output|import|while|for|foreach|loop|return|print|input|set|extends|static|public|private|switch|case|do|end|break|continue)\\b"
+					"match": "(?i)\\b(si|sino|intentar|capturar|imprimir|leer|mientras|para|paracada|repetir|proceso|funcion|clase|estructura|mod|y|o|no|retornar|romper|continuar|extends|estatico|publico|privado|caso|hacer|fin)\\b"
 				},
 				{
 					"name": "keyword.operator.logical.pseudocode",
-					"match": "(?i)\\b(and|or|not|!|&&|\\|\\||in)\\b"
+					"match": "(?i)\\b(y|o|no|!|&&|\\|\\|)\\b"
 				},
 				{
 					"name": "keyword.declaration.function.pseudocode",
-					"match": "(?i)\\b(function|procedure)\\b"
+					"match": "(?i)\\b(funcion|proceso)\\b"
 				},
 				{
 					"name": "keyword.declaration.class.pseudocode",
-					"match": "(?i)\\bclass\\b"
+					"match": "(?i)\\bclase\\b"
 				},
 				{
 					"name": "keyword.declaration.struct.pseudocode",
-					"match": "(?i)\\bstruct\\b"
+					"match": "(?i)\\bestructura\\b"
 				},
 				{
 					"name": "meta.function-call.pseudocode",
@@ -78,8 +78,8 @@
 			"patterns": [
 				{
 					"name": "meta.function.pseudocode",
-					"begin": "(?i)\\b(static |private |public )?((function|procedure)) ([a-zA-Z_][a-zA-Z0-9_]*)\\(((.*?))\\) *(?:\\{|(do))",
-					"end": "(?i)(?:\\}|(end))",
+					"begin": "(?i)\\b(estatico |privado |publico )?((funcion|proceso)) ([a-zA-Z_][a-zA-Z0-9_]*)\\(((.*?))\\) *(?:\\{|(hacer))",
+					"end": "(?i)(?:\\}|(fin))",
 					"beginCaptures": {
 						"1": {
 							"name": "storage.modifier.pseudocode"
@@ -143,8 +143,8 @@
 				},
 				{
 					"name": "meta.class.pseudocode",
-					"begin": "(?i)\\b(static |private |public )?((class)) ([a-zA-Z_][a-zA-Z0-9_]*) *(?:(extends) *([a-zA-Z_][a-zA-Z0-9_]*))? *(?:\\{|(do))",
-					"end": "(?i)(?:\\}|(end))",
+					"begin": "(?i)\\b(estatico |privado |publico )?((clase)) ([a-zA-Z_][a-zA-Z0-9_]*) *(?:(extiende) *([a-zA-Z_][a-zA-Z0-9_]*))? *(?:\\{|(hacer))",
+					"end": "(?i)(?:\\}|(fin))",
 					"beginCaptures": {
 						"1": {
 							"name": "storage.modifier.pseudocode"
@@ -208,8 +208,8 @@
 				},
 				{
 					"name": "meta.struct.pseudocode",
-					"begin": "(?i)\\b(static |private |public )?((struct)) ([a-zA-Z_][a-zA-Z0-9_]*) *(?:\\{|(do))",
-					"end": "(?i)(?:\\}|(end))",
+					"begin": "(?i)\\b(estatico |privado |publico )?((estructura)) ([a-zA-Z_][a-zA-Z0-9_]*) *(?:\\{|(hacer))",
+					"end": "(?i)(?:\\}|(fin))",
 					"beginCaptures": {
 						"1": {
 							"name": "storage.modifier.pseudocode"
@@ -274,31 +274,31 @@
 			"patterns": [
 				{
 					"name": "storage.type.function.pseudocode",
-					"match": "(?i)\\b(function|procedure)\\b"
+					"match": "(?i)\\b(funcion|proceso)\\b"
 				},
 				{
 					"name": "storage.type.class.pseudocode",
-					"match": "(?i)\\bclass\\b"
+					"match": "(?i)\\bclase\\b"
 				},
 				{
 					"name": "storage.type.struct.pseudocode",
-					"match": "(?i)\\bstruct\\b"
+					"match": "(?i)\\bestructura\\b"
 				},
 				{
 					"name": "storage.modifier.pseudocode",
-					"match": "(?i)\\bextends\\b"
+					"match": "(?i)\\bextiende\\b"
 				},
 				{
 					"name": "storage.modifier.pseudocode",
-					"match": "(?i)\\bstatic\\b"
+					"match": "(?i)\\bestatico\\b"
 				},
 				{
 					"name": "storage.modifier.pseudocode",
-					"match": "(?i)\\bpublic\\b"
+					"match": "(?i)\\bpublico\\b"
 				},
 				{
 					"name": "storage.modifier.pseudocode",
-					"match": "(?i)\\bprivate\\b"
+					"match": "(?i)\\bprivado\\b"
 				}
 			]
 		},
@@ -367,7 +367,7 @@
 		"bools": {
 			"patterns": [{
 				"name": "constant.language.pesudocode",
-				"match": "(?i)\\b(true|false|null)\\b"
+				"match": "(?i)\\b(verdadero|falso|null)\\b"
 			}]
 		},
 		"variables": {
@@ -382,11 +382,11 @@
 				},
 				{
 					"name": "variable.parameter.pseudocode",
-					"match": "(?i)(?<=function [a-zA-Z0-9_]\\().*?(?=\\))"
+					"match": "(?i)(?<=funcion [a-zA-Z0-9_]\\().*?(?=\\))"
 				},
 				{
 					"name": "variable.parameter.pseudocode",
-					"match": "(?i)(?<=procedure [a-zA-Z0-9_]\\().*?(?=\\))"
+					"match": "(?i)(?<=proceso [a-zA-Z0-9_]\\().*?(?=\\))"
 				}
 			]
 		},
@@ -398,11 +398,11 @@
 				},
 				{
 					"name": "entity.name.class.pseudocode",
-					"match": "(?i)\\b(?<=class )[a-zA-Z_][a-zA-Z0-9_]*(?= *\\()\\b"
+					"match": "(?i)\\b(?<=clase )[a-zA-Z_][a-zA-Z0-9_]*(?= *\\()\\b"
 				},
 				{
 					"name": "entity.name.struct.pseudocode",
-					"match": "(?i)\\b(?<=struct )[a-zA-Z_][a-zA-Z0-9_]*(?= *\\()\\b"
+					"match": "(?i)\\b(?<=estructura )[a-zA-Z_][a-zA-Z0-9_]*(?= *\\()\\b"
 				}
 			]
 		},

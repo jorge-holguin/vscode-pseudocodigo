@@ -1,516 +1,254 @@
 {
-	"Switch-case statement": {
-		"prefix": "switch",
+	"Selección-múltiple": {
+		"prefix": "segun",
 		"body": [
-			"switch(${1:key}) {",
-            "\tcase \"${2:value}\":",
-            "\t\t$3",
-            "\t\tbreak",
-            "}"
+			"Segun(${1:variable}) Hacer",
+            "\t${2:valor}:",
+            "\t\t${3:instrucciones}",
+            "\t\tFinSegun"
 		],
-		"description": "Create a switch-case statement"
+		"description": "Crear una estructura de selección múltiple"
 	},
-	"Switch-case statement with do": {
-		"prefix": "switchdo",
+	"Selección-múltiple con hacer": {
+		"prefix": "segundo",
 		"body": [
-			"switch(${1:key}) do",
-            "\tcase \"${2:value}\":",
-            "\t\t$3",
-            "\t\tbreak",
-            "end"
+			"Segun(${1:variable}) Hacer",
+            "\t${2:valor}:",
+            "\t\t${3:instrucciones}",
+            "\t\tFinSegun"
 		],
-		"description": "Create a switch-case statement"
+		"description": "Crear una estructura de selección múltiple con hacer"
 	},
-	"If statement": {
-		"prefix": "if",
+	"Estructura Si-Entonces": {
+		"prefix": "si",
 		"body": [
-			"if (${1:condition}) {",
-            "\t",
-            "}"
+			"Si (${1:condicion}) Entonces",
+            "\t${2:instrucciones}",
+            "FinSi"
 		],
-		"description": "Create an if statement"
+		"description": "Crear una estructura Si-Entonces"
 	},
-	"If statement with do": {
-		"prefix": "ifdo",
+	"Estructura Si-Entonces con hacer": {
+		"prefix": "sihacer",
 		"body": [
-			"if (${1:condition}) do",
-            "\t",
-            "end"
+			"Si (${1:condicion}) Entonces",
+            "\t${2:instrucciones}",
+            "FinSi"
 		],
-		"description": "Create an if statement with do"
+		"description": "Crear una estructura Si-Entonces con hacer"
 	},
-	"If-else statement": {
-		"prefix": "ifelse",
+	"Estructura Si-Entonces-Sino": {
+		"prefix": "sino",
 		"body": [
-			"if (${1:condition}) {",
-            "\t$2",
-            "} else {",
-            "\t$3",
-            "}"
+			"Si (${1:condicion}) Entonces",
+            "\t${2:instrucciones}",
+            "SiNo",
+            "\t${3:instrucciones}",
+            "FinSi"
 		],
-        	"description": "Create an if-else statement"
-    	},
-	"If-else statement with do": {
-		"prefix": "ifelsedo",
+        "description": "Crear una estructura Si-Entonces-Sino"
+    },
+	"Estructura Si-Entonces-Sino con hacer": {
+		"prefix": "sinoshacer",
 		"body": [
-			"if (${1:condition}) do",
-            "\t$2",
-            "end else do",
-            "\t$3",
-            "end"
+			"Si (${1:condicion}) Entonces",
+            "\t${2:instrucciones}",
+            "SiNo",
+            "\t${3:instrucciones}",
+            "FinSi"
 		],
-		"description": "Create an if-else statement with do"
+		"description": "Crear una estructura Si-Entonces-Sino con hacer"
 	},
-	"Try-catch statement": {
-		"prefix": "try",
+	"Estructura de intento-captura": {
+		"prefix": "intentar",
 		"body": [
-			"try {",
-            "\t$2",
-            "} catch(${1:err}) {",
-            "\t$3",
-            "}"
+			"Intenta",
+            "\t${2:instrucciones}",
+            "Capturar(${1:error})",
+            "\t${3:instrucciones}",
+            "FinCaptura"
 		],
-		"description": "Create a try-catch statement"
+		"description": "Crear una estructura de intento-captura"
 	},
-	"Try-catch statement with do": {
-		"prefix": "trydo",
+	"Estructura de intento-captura con hacer": {
+		"prefix": "intentarhacer",
 		"body": [
-			"try do",
-            "\t$2",
-            "end catch(${1:err}) do",
-            "\t$3",
-            "end"
+			"Intenta",
+            "\t${2:instrucciones}",
+            "Capturar(${1:error})",
+            "\t${3:instrucciones}",
+            "FinCaptura"
 		],
-		"description": "Create a try-catch statement with do"
+		"description": "Crear una estructura de intento-captura con hacer"
 	},
-	"Function": {
-		"prefix": "function",
+	"Función": {
+		"prefix": "funcion",
 		"body": [
-			"function ${1:func}(${2:param}) {",
-            "\t$3",
-            "}"
+			"Funcion ${1:funcion}(${2:parametro})",
+            "\t${3:instrucciones}",
+            "FinFuncion"
 		],
-		"description": "Define a new function"
+		"description": "Definir una nueva función"
 	},
-	"Function with do": {
-		"prefix": "functiondo",
+	"Función con hacer": {
+		"prefix": "funcionhacer",
 		"body": [
-			"function ${1:func}(${2:param}) do",
-            "\t$3",
-            "end"
+			"Funcion ${1:funcion}(${2:parametro})",
+            "\t${3:instrucciones}",
+            "FinFuncion"
 		],
-		"description": "Define a new function with do"
+		"description": "Definir una nueva función con hacer"
 	},
-	"Procedure": {
-		"prefix": "procedure",
+	"Procedimiento": {
+		"prefix": "procedimiento",
 		"body": [
-			"procedure ${1:procedureName}() {",
-            "\t$2",
-            "}"
+			"Proceso ${1:procedimiento}()",
+            "\t${2:instrucciones}",
+            "FinProceso"
 		],
-		"description": "Define a new procedure"
+		"description": "Definir un nuevo procedimiento"
 	},
-	"Procedure with do": {
-		"prefix": "proceduredo",
+	"Procedimiento con hacer": {
+		"prefix": "procedimientohacer",
 		"body": [
-			"procedure ${1:procedureName}() do",
-            "\t$2",
-            "end"
+			"Proceso ${1:procedimiento}()",
+            "\t${2:instrucciones}",
+            "FinProceso"
 		],
-		"description": "Define a new procedure with do"
+		"description": "Definir un nuevo procedimiento con hacer"
 	},
-	"For loop": {
-		"prefix": "for",
+	"Bucle Para": {
+		"prefix": "para",
 		"body": [
-			"for ($1) {",
-            "\t$2",
-            "}"
+			"Para ${1:variable} <- ${2:inicial} Hasta ${3:final} Con Paso ${4:paso} Hacer",
+            "\t${5:instrucciones}",
+            "FinPara"
 		],
-		"description": "Create a for loop"
+		"description": "Crear un bucle Para"
 	},
-	"For loop with do": {
-		"prefix": "fordo",
+	"Bucle Para con hacer": {
+		"prefix": "parahacer",
 		"body": [
-			"for ($1) do",
-            "\t$2",
-            "end"
+			"Para ${1:variable} <- ${2:inicial} Hasta ${3:final} Con Paso ${4:paso} Hacer",
+            "\t${5:instrucciones}",
+            "FinPara"
 		],
-		"description": "Create a for loop with do"
-    	},
-    	"Foreach loop": {
-		"prefix": "foreach",
+		"description": "Crear un bucle Para con hacer"
+    },
+    "Bucle Para Cada": {
+		"prefix": "paracada",
 		"body": [
-			"foreach (${1:i} in ${2:iterable}) {",
-            "\t$3",
-            "}"
+			"Para Cada ${1:elemento} De ${2:arreglo} Hacer",
+            "\t${3:instrucciones}",
+            "FinPara"
 		],
-		"description": "Create a foreach loop"
+		"description": "Crear un bucle Para Cada"
 	},
-	"Foreach loop with do": {
-		"prefix": "foreachdo",
+	"Bucle Para Cada con hacer": {
+		"prefix": "paracadahacer",
 		"body": [
-			"foreach (${1:i} in ${2:iterable}) do",
-            "\t$3",
-            "end"
+			"Para Cada ${1:elemento} De ${2:arreglo} Hacer",
+            "\t${3:instrucciones}",
+            "FinPara"
 		],
-		"description": "Create a foreach loop with do"
+		"description": "Crear un bucle Para Cada con hacer"
 	},
-	"While loop": {
-		"prefix": "while",
+	"Bucle Mientras": {
+		"prefix": "mientras",
 		"body": [
-			"while (${1:condition}) {",
-            "\t$2",
-            "}"
+			"Mientras (${1:condicion}) Hacer",
+            "\t${2:instrucciones}",
+            "FinMientras"
 		],
-		"description": "Create a while loop"
+		"description": "Crear un bucle Mientras"
 	},
-	"While loop with do": {
-		"prefix": "whiledo",
+	"Bucle Mientras con hacer": {
+		"prefix": "mientrashacer",
 		"body": [
-			"while (${1:condition}) do",
-            "\t$2",
-            "end"
+			"Mientras (${1:condicion}) Hacer",
+            "\t${2:instrucciones}",
+            "FinMientras"
 		],
-		"description": "Create a while loop with do"
-    	},
-    	"Loop": {
-		"prefix": "loop",
+		"description": "Crear un bucle Mientras con hacer"
+    },
+    "Bucle Repetir": {
+		"prefix": "repetir",
 		"body": [
-			"loop (${1:condition}) {",
-            "\t$2",
-            "}"
+			"Repetir",
+            "\t${1:instrucciones}",
+            "Hasta Que ${2:condicion}"
 		],
-		"description": "Create a loop"
+		"description": "Crear un bucle Repetir"
 	},
-	"Loop with do": {
-		"prefix": "loopdo",
+	"Bucle Repetir con hacer": {
+		"prefix": "repetirhacer",
 		"body": [
-			"loop (${1:condition}) do",
-            "\t$2",
-            "end"
+			"Repetir",
+            "\t${1:instrucciones}",
+            "Hasta Que ${2:condicion}"
 		],
-		"description": "Create a loop with do"
+		"description": "Crear un bucle Repetir con hacer"
 	},
-	"Class": {
-		"prefix": "class",
+	"Clase": {
+		"prefix": "clase",
 		"body": [
-			"class ${1:className} {",
-            "\tconstructor(${2:param}) {",
-            "\t\t$3",
-            "\t}",
-            "}"
+			"Clase ${1:nombreClase}",
+            "\tConstructor(${2:parametro})",
+            "\t\t${3:instrucciones}",
+            "\tFinConstructor",
+            "FinClase"
 		],
-		"description": "Define a class"
+		"description": "Definir una clase"
 	},
-	"Class with do": {
-		"prefix": "classdo",
+	"Clase con hacer": {
+		"prefix": "clasehacer",
 		"body": [
-			"class ${1:className} do",
-            "\tconstructor(${2:param}) do",
-            "\t\t$3",
-            "\tend",
-            "end"
+			"Clase ${1:nombreClase}",
+            "\tConstructor(${2:parametro})",
+            "\t\t${3:instrucciones}",
+            "\tFinConstructor",
+            "FinClase"
 		],
-		"description": "Define a class with do"
+		"description": "Definir una clase con hacer"
 	},
-	"Class extends": {
-		"prefix": "classextends",
+	"Clase extiende": {
+		"prefix": "claseextiende",
 		"body": [
-			"class ${1:className} extends ${2:super} {",
-            "\tconstructor(${3:param}) {",
-            "\t\t$4",
-            "\t}",
-            "}"
+			"Clase ${1:nombreClase} Extiende ${2:superClase}",
+            "\tConstructor(${3:parametro})",
+            "\t\t${4:instrucciones}",
+            "\tFinConstructor",
+            "FinClase"
 		],
-		"description": "Define a class which extends a superclass"
+		"description": "Definir una clase que extiende de otra clase"
 	},
-	"Class extends with do": {
-		"prefix": "classextendsdo",
+	"Clase extiende con hacer": {
+		"prefix": "claseextiendedo",
 		"body": [
-			"class ${1:className} extends ${2:super} do",
-            "\tconstructor(${3:param}) do",
-            "\t\t$4",
-            "\tend",
-            "end"
+			"Clase ${1:nombreClase} Extiende ${2:superClase}",
+            "\tConstructor(${3:parametro})",
+            "\t\t${4:instrucciones}",
+            "\tFinConstructor",
+            "FinClase"
 		],
-		"description": "Define a class which extends a superclass with do"
+		"description": "Definir una clase que extiende de otra clase con hacer"
 	},
-	"Struct": {
-		"prefix": "struct",
+	"Estructura": {
+		"prefix": "estructura",
 		"body": [
-			"struct ${1:structName} {",
-            "\t$2",
-            "}"
+			"Estructura ${1:nombreEstructura}",
+            "\t${2:instrucciones}",
+            "FinEstructura"
 		],
-		"description": "Define a struct"
+		"description": "Definir una estructura"
 	},
-	"Struct with do": {
-		"prefix": "structdo",
+	"Estructura con hacer": {
+		"prefix": "estructurahacer",
 		"body": [
-			"struct ${1:structName} do",
-            "\t$2",
-            "end"
+			"Estructura ${1:nombreEstructura}",
+            "\t${2:instrucciones}",
+            "FinEstructura"
 		],
-		"description": "Define a struct with do"
-	},
-	
-	
-	
-	
-	
-	
-	"UPPER Switch-case statement": {
-		"prefix": "uswitch",
-		"body": [
-			"SWITCH(${1:key}) {",
-            "\tCASE \"${2:value}\":",
-            "\t\t$3",
-            "\t\tBREAK",
-            "}"
-		],
-		"description": "Create a switch-case statement"
-	},
-	"UPPER Switch-case statement with do": {
-		"prefix": "uswitchdo",
-		"body": [
-			"SWITCH(${1:key}) DO",
-            "\tCASE \"${2:value}\":",
-            "\t\t$3",
-            "\t\tBREAK",
-            "END"
-		],
-		"description": "Create a switch-case statement"
-	},
-	"UPPER If statement": {
-		"prefix": "uif",
-		"body": [
-			"IF (${1:condition}) {",
-            "\t",
-            "}"
-		],
-		"description": "Create an if statement"
-	},
-	"UPPER If statement with do": {
-		"prefix": "uifdo",
-		"body": [
-			"IF (${1:condition}) DO",
-            "\t",
-            "END"
-		],
-		"description": "Create an if statement with do"
-	},
-	"UPPER If-else statement": {
-		"prefix": "uifelse",
-		"body": [
-			"IF (${1:condition}) {",
-            "\t$2",
-            "} ELSE {",
-            "\t$3",
-            "}"
-		],
-        	"description": "Create an if-else statement"
-    	},
-	"UPPER If-else statement with do": {
-		"prefix": "uifelsedo",
-		"body": [
-			"IF (${1:condition}) DO",
-            "\t$2",
-            "END ELSE DO",
-            "\t$3",
-            "END"
-		],
-		"description": "Create an if-else statement with do"
-	},
-	"UPPER Try-catch statement": {
-		"prefix": "utry",
-		"body": [
-			"TRY {",
-            "\t$2",
-            "} CATCH(${1:err}) {",
-            "\t$3",
-            "}"
-		],
-		"description": "Create a try-catch statement"
-	},
-	"UPPER Try-catch statement with do": {
-		"prefix": "utrydo",
-		"body": [
-			"TRY DO",
-            "\t$2",
-            "END CATCH(${1:err}) DO",
-            "\t$3",
-            "END"
-		],
-		"description": "Create a try-catch statement with do"
-	},
-	"UPPER Function": {
-		"prefix": "ufunction",
-		"body": [
-			"FUNCTION ${1:func}(${2:param}) {",
-            "\t$3",
-            "}"
-		],
-		"description": "Define a new function"
-	},
-	"UPPER Function with do": {
-		"prefix": "ufunctiondo",
-		"body": [
-			"FUNCTION ${1:func}(${2:param}) DO",
-            "\t$3",
-            "END"
-		],
-		"description": "Define a new function with do"
-	},
-	"UPPER Procedure": {
-		"prefix": "uprocedure",
-		"body": [
-			"PROCEDURE ${1:procedureName}() {",
-            "\t$2",
-            "}"
-		],
-		"description": "Define a new procedure"
-	},
-	"UPPER Procedure with do": {
-		"prefix": "uproceduredo",
-		"body": [
-			"PROCEDURE ${1:procedureName}() DO",
-            "\t$2",
-            "END"
-		],
-		"description": "Define a new procedure with do"
-	},
-	"UPPER For loop": {
-		"prefix": "ufor",
-		"body": [
-			"FOR ($1) {",
-            "\t$2",
-            "}"
-		],
-		"description": "Create a for loop"
-	},
-	"UPPER For loop with do": {
-		"prefix": "ufordo",
-		"body": [
-			"FOR ($1) DO",
-            "\t$2",
-            "END"
-		],
-		"description": "Create a for loop with do"
-    	},
-    	"UPPER Foreach loop": {
-		"prefix": "uforeach",
-		"body": [
-			"FOREACH (${1:i} IN ${2:iterable}) {",
-            "\t$3",
-            "}"
-		],
-		"description": "Create a foreach loop"
-	},
-	"UPPER Foreach loop with do": {
-		"prefix": "uforeachdo",
-		"body": [
-			"FOREACH (${1:i} IN ${2:iterable}) DO",
-            "\t$3",
-            "END"
-		],
-		"description": "Create a foreach loop with do"
-	},
-	"UPPER While loop": {
-		"prefix": "uwhile",
-		"body": [
-			"WHILE (${1:condition}) {",
-            "\t$2",
-            "}"
-		],
-		"description": "Create a while loop"
-	},
-	"UPPER While loop with do": {
-		"prefix": "uwhiledo",
-		"body": [
-			"WHILE (${1:condition}) DO",
-            "\t$2",
-            "END"
-		],
-		"description": "Create a while loop with do"
-    	},
-    	"UPPER Loop": {
-		"prefix": "uloop",
-		"body": [
-			"LOOP (${1:condition}) {",
-            "\t$2",
-            "}"
-		],
-		"description": "Create a loop"
-	},
-	"UPPER Loop with do": {
-		"prefix": "uloopdo",
-		"body": [
-			"LOOP (${1:condition}) DO",
-            "\t$2",
-            "END"
-		],
-		"description": "Create a loop with do"
-	},
-	"UPPER Class": {
-		"prefix": "uclass",
-		"body": [
-			"CLASS ${1:className} {",
-            "\tCONSTRUCTOR(${2:param}) {",
-            "\t\t$3",
-            "\t}",
-            "}"
-		],
-		"description": "Define a class"
-	},
-	"UPPER Class with do": {
-		"prefix": "uclassdo",
-		"body": [
-			"CLASS ${1:className} DO",
-            "\tCONSTRUCTOR(${2:param}) DO",
-            "\t\t$3",
-            "\tEND",
-            "END"
-		],
-		"description": "Define a class with do"
-	},
-	"UPPER Class extends": {
-		"prefix": "uclassextends",
-		"body": [
-			"CLASS ${1:className} EXTENDS ${2:super} {",
-            "\tCONSTRUCTOR(${3:param}) {",
-            "\t\t$4",
-            "\t}",
-            "}"
-		],
-		"description": "Define a class which extends a superclass"
-	},
-	"UPPER Class extends with do": {
-		"prefix": "uclassextendsdo",
-		"body": [
-			"CLASS ${1:className} EXTENDS ${2:super} DO",
-            "\tCONSTRUCTOR(${3:param}) DO",
-            "\t\t$4",
-            "\tEND",
-            "END"
-		],
-		"description": "Define a class which extends a superclass with do"
-	},
-	"UPPER Struct": {
-		"prefix": "ustruct",
-		"body": [
-			"STRUCT ${1:structName} {",
-            "\t$2",
-            "}"
-		],
-		"description": "Define a struct"
-	},
-	"UPPER Struct with do": {
-		"prefix": "ustructdo",
-		"body": [
-			"STRUCT ${1:structName} DO",
-            "\t$2",
-            "END"
-		],
-		"description": "Define a struct with do"
+		"description": "Definir una estructura con hacer"
 	}
 }

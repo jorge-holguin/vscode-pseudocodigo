@@ -1,66 +1,37 @@
 {
-    "name": "pseudocodigo",
-    "displayName": "Pseudocodigo",
-    "description": "Una extensión para resaltar la sintaxis del pseudocodigo en español",
-    "publisher": "jorgeholguin",
-    "icon": "images/icon.png",
-    "version": "1.0.1",
+    "name": "pseudocode",
+    "displayName": "Pseudocodigo en Español",
+    "description": "Extensión para soporte de pseudocódigo en español",
+    "version": "0.0.1",
+    "publisher": "tu-usuario",
     "engines": {
-        "vscode": "^1.55.0"
+        "vscode": "^1.50.0"
     },
     "categories": [
-        "Programming Languages",
-        "Snippets"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [
             {
                 "id": "pseudocode",
-                "aliases": [
-                    "Generic Pseudocode",
-                    "pseudocode"
-                ],
-                "extensions": [
-                    ".psc"
-                ],
+                "aliases": ["Pseudocode", "psc"],
+                "extensions": [".psc"],
                 "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
             {
                 "language": "pseudocode",
-                "scopeName": "source.pseudo",
+                "scopeName": "source.pseudocode",
                 "path": "./syntaxes/pseudocode.tmLanguage.json"
             }
         ],
-        "snippets": [
+        "iconThemes": [
             {
-                "language": "pseudocode",
-                "path": "./snippets.json"
-            }
-        ],
-        "icons": {
-            "fileIcons": [
-                {
-                    "iconPath": "./icons/psc-icon.png",
-                    "fileExtensions": ["psc"]
-                }
-            ]
-        }
-    },
-    "activationEvents": [
-        "onLanguage:pseudocode"
-    ],
-    "main": "./out/extension.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jorge-holguin/vscode-pseudocodigo"
-    },
-    "devDependencies": {
-        "@types/node": "^15.0.1",
-        "@types/vscode": "^1.55.0",
-        "typescript": "^4.2.4",
-        "vscode": "^1.1.37"
-    },
-    "dependencies": {}
+               "id": "pscIcons",
+               "label": "Pseudocode Icons",
+               "path": "./icon-theme.json"
+           }
+       ]
+   }
 }

@@ -1,10 +1,13 @@
 {
     "iconDefinitions": {
         "_file_psc": {
-            "iconPath": "./psc-icon.png"
+            "iconPath": "./images/psc-icon.png"
         }
     },
     "fileExtensions": {
-        "psc": ".psc"
+        "psc": "_file_psc"
+    },
+    "languageIds": {
+        "pseudocode": "_file_psc"
     }
 }

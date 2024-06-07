@@ -1,8 +1,5 @@
 # Pseudocode
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/willumz.generic-pseudocode)](https://marketplace.visualstudio.com/items?itemName=willumz.generic-pseudocode)
-<!-- [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/willumz.generic-pseudocode)](https://marketplace.visualstudio.com/items?itemName=willumz.generic-pseudocode) -->
-
 Una extensión simple para el resaltado de sintaxis de pseudocódigo genérico.
 
 El resaltado de sintaxis existe para múltiples variantes de palabras clave de pseudocódigo comunes, lo que te permite usar tu propio estilo sin limitarte a un formato específico.
@@ -105,7 +102,7 @@ e.g.
 ```
 Si Sino:
 
-![Si Sino](images/ifelse.png)
+![Si Sino](./images/ifelse.png)
 
 Bucles:
 

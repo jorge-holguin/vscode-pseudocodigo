@@ -17,7 +17,7 @@ Una extensión simple para el resaltado de sintaxis de pseudocódigo genérico.
 
 El resaltado de sintaxis existe para múltiples variantes de palabras clave de pseudocódigo comunes, lo que te permite usar tu propio estilo sin limitarte a un formato específico.
 
-## Tabla de Contenidos:
+## 📖 Tabla de Contenidos:
 - [Pseudocode](#pseudocode)
   - [Tabla de Contenidos:](#tabla-de-contenidos)
   - [Características](#características)
@@ -31,13 +31,13 @@ El resaltado de sintaxis existe para múltiples variantes de palabras clave de p
     - [Fragmentos de Código](#fragmentos-de-código)
     - [Palabras Clave Personalizables](#palabras-clave-personalizables)
 
-## Características
+## 📝 Características
 
-### Resaltado de Sintaxis
+### 🔠 Resaltado de Sintaxis
 
 Los siguientes elementos tienen resaltado de sintaxis. Los sinónimos están separados por espacios.
 
-#### Palabras Clave:
+#### 📋 Palabras Clave:
 ```
 escribir imprimir e.g. escribir "Hola Mundo"
 leer
@@ -58,14 +58,14 @@ continuar
 hacer
 fin
 ```
-#### Operadores:
+#### 🧮 Operadores:
 ```
 y &&
 o ||
 no !
 en
 ```
-#### Funciones:
+#### 🟰 Funciones:
 ```
 funcion
 proceso
@@ -75,7 +75,7 @@ e.g.
     fin
 decir("Hola Mundo")
 ```
-#### Clases:
+#### 🐒 Clases:
 ```
 clase
 extiende
@@ -92,21 +92,15 @@ e.g.
         fin
     fin
 ```
-#### Estructuras:
+#### 🧱 Estructuras:
 ```
-struct
-e.g.
-    struct A do
-        
-    end
-
 estructura
 e.g.
     estructura A hacer
     
     fin
 ```
-#### Cadenas de Plantilla:
+#### 🔗 Cadenas de Plantilla:
 ```
 ${}
 e.g.
@@ -115,38 +109,38 @@ e.g.
 ```
 Si Sino:
 
-![Si Sino](./images/ifelse.png)
+![Si Sino](./images/sisino.png)
 
 Bucles:
 
-![Bucles](images/loops.png)
+![Bucles](images/bucles.png)
 
 Segun:
 
-![Segun](images/switch.png)
+![Segun](images/segun.png)
 
 Intentar Capturar:
 
-![Intentar Capturar](images/trycatch.png)
+![Intentar Capturar](images/intentar.png)
 
 Funciones:
 
-![Funciones](images/function.png)
+![Funciones](images/funcion.png)
 
 Clases:
 
-![Clases](images/class.png)
+![Clases](images/clase.png)
 
 Estructuras:
 
-![Estructuras](images/struct.png)
+![Estructuras](images/estructura.png)
 
-### Fragmentos de Código
+### 💎 Fragmentos de Código
 ![Fragmentos de Código](images/snippets.gif)
 
 Nota: todos los fragmentos tienen variantes en mayúsculas que comienzan con 'u'
 
-### Palabras Clave Personalizables
+### 🔑 Palabras Clave Personalizables
 También puedes definir tus propias palabras clave personalizadas en un archivo de configuración.
 
 Si no estás contento con las palabras clave predefinidas incluidas, ahora puedes agregar las tuyas en un archivo `.pseudoconfig` ubicado en el directorio de inicio de tu usuario (`~/.pseudoconfig` o `C:\Users\{username}\.pseudoconfig`).
@@ -166,3 +160,11 @@ Ejemplo:
     }
 }
 ```
+
+## 📱 Contacto
+
+[![Whatsapp](https://img.shields.io/badge/Whatsapp-@vidadigital-2CA5E0?style=social&logo=whatsapp&logoColor=00bb2d)](https://wa.link/vrfkzc)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-vidadigital-blue?style=flat&logo=linkedin&logoColor=b0c0c0&labelColor=363D44)](https://www.linkedin.com/in/jorgeholguinc/)
+[![Instagram](https://img.shields.io/badge/Instagram-vidadigital-grey?style=flat&logo=instagram&logoColor=b0c0c0&labelColor=8134af)](https://www.instagram.com/vidadigitalai/)
+[![Discord](https://img.shields.io/badge/Discord-vidadigital-7289da?style=flat&logo=discord&logoColor=b0c0c0&labelColor=2c2f33)](https://discord.com/invite/M9WDc7xX)
+[![Twitter](https://img.shields.io/twitter/follow/vidadigital.svg?style=social)](https://twitter.com/VidaDigitalIA)

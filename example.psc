@@ -6,7 +6,7 @@ Si x = 1 Entonces
     Escribir "x = 1"
 SiNo
     Escribir "x != 1"
-FinSi
+Fin Si
 
 // Definir otra variable
 Definir y Como Entero <- 1
@@ -15,54 +15,59 @@ Definir y Como Entero <- 1
 Mientras y <= 10 Hacer
     Escribir y
     y <- y + 1
-FinMientras
+Fin Mientras
 
 // Bucle Para
 Para i <- 1 Hasta 10 Con Paso 1 Hacer
     Escribir i
-FinPara
+Fin Para
 
 // Bucle Para Cada
 Para Cada i De iterable Hacer
     Escribir i
-FinPara
+Fin Para
 
 // Estructura de selección múltiple (Segun)
 Definir a Como Caracter <- "x"
-Segun a Hacer
+Segun (a) Hacer
     "x":
         Escribir "a = 'x'"
     "y":
         Escribir "a = 'y'"
-FinSegun
+Fin Segun
 
 // Estructura de intento-captura
-Intenta
+Intentar
     MakeError()
 Capturar(err)
     Escribir err
-FinCaptura
+Fin Captura
 
 // Definir una función
 Funcion Sumar(a, b) Con Retorno : Entero
     Retornar a + b
-FinFuncion
+Fin Funcion
 
 // Definir un procedimiento
 Proceso HolaMundo()
     Escribir "Hola Mundo"
-FinProceso
+Fin Proceso
 
 // Definir una clase
 Clase A
     Constructor()
         Escribir "Constructed"
     FinConstructor
-FinClase
+Fin Clase
 
 // Definir una clase que extiende de otra clase
 Clase A Extiende B
     Constructor()
         Escribir "Constructed"
     FinConstructor
-FinClase
+Fin Clase
+
+Estructura S
+    instrucciones
+Fin Estructura
+

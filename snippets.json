@@ -5,7 +5,7 @@
 			"Segun(${1:variable}) Hacer",
             "\t${2:valor}:",
             "\t\t${3:instrucciones}",
-            "\t\tFinSegun"
+            "\t\tFin Segun"
 		],
 		"description": "Crear una estructura de selección múltiple"
 	},
@@ -15,7 +15,7 @@
 			"Segun(${1:variable}) Hacer",
             "\t${2:valor}:",
             "\t\t${3:instrucciones}",
-            "\t\tFinSegun"
+            "\t\tFin Segun"
 		],
 		"description": "Crear una estructura de selección múltiple con hacer"
 	},
@@ -24,7 +24,7 @@
 		"body": [
 			"Si (${1:condicion}) Entonces",
             "\t${2:instrucciones}",
-            "FinSi"
+            "Fin Si"
 		],
 		"description": "Crear una estructura Si-Entonces"
 	},
@@ -33,7 +33,7 @@
 		"body": [
 			"Si (${1:condicion}) Entonces",
             "\t${2:instrucciones}",
-            "FinSi"
+            "Fin Si"
 		],
 		"description": "Crear una estructura Si-Entonces con hacer"
 	},
@@ -44,7 +44,7 @@
             "\t${2:instrucciones}",
             "SiNo",
             "\t${3:instrucciones}",
-            "FinSi"
+            "Fin Si"
 		],
         "description": "Crear una estructura Si-Entonces-Sino"
     },
@@ -55,7 +55,7 @@
             "\t${2:instrucciones}",
             "SiNo",
             "\t${3:instrucciones}",
-            "FinSi"
+            "Fin Si"
 		],
 		"description": "Crear una estructura Si-Entonces-Sino con hacer"
 	},
@@ -66,7 +66,7 @@
             "\t${2:instrucciones}",
             "Capturar(${1:error})",
             "\t${3:instrucciones}",
-            "FinCaptura"
+            "Fin Captura"
 		],
 		"description": "Crear una estructura de intento-captura"
 	},
@@ -77,7 +77,7 @@
             "\t${2:instrucciones}",
             "Capturar(${1:error})",
             "\t${3:instrucciones}",
-            "FinCaptura"
+            "Fin Captura"
 		],
 		"description": "Crear una estructura de intento-captura con hacer"
 	},
@@ -86,7 +86,7 @@
 		"body": [
 			"Funcion ${1:funcion}(${2:parametro})",
             "\t${3:instrucciones}",
-            "FinFuncion"
+            "Fin Funcion"
 		],
 		"description": "Definir una nueva función"
 	},
@@ -95,7 +95,7 @@
 		"body": [
 			"Funcion ${1:funcion}(${2:parametro})",
             "\t${3:instrucciones}",
-            "FinFuncion"
+            "Fin Funcion"
 		],
 		"description": "Definir una nueva función con hacer"
 	},
@@ -104,7 +104,7 @@
 		"body": [
 			"Proceso ${1:procedimiento}()",
             "\t${2:instrucciones}",
-            "FinProceso"
+            "Fin Proceso"
 		],
 		"description": "Definir un nuevo procedimiento"
 	},
@@ -113,7 +113,7 @@
 		"body": [
 			"Proceso ${1:procedimiento}()",
             "\t${2:instrucciones}",
-            "FinProceso"
+            "Fin Proceso"
 		],
 		"description": "Definir un nuevo procedimiento con hacer"
 	},
@@ -122,7 +122,7 @@
 		"body": [
 			"Para ${1:variable} <- ${2:inicial} Hasta ${3:final} Con Paso ${4:paso} Hacer",
             "\t${5:instrucciones}",
-            "FinPara"
+            "Fin Para"
 		],
 		"description": "Crear un bucle Para"
 	},
@@ -131,7 +131,7 @@
 		"body": [
 			"Para ${1:variable} <- ${2:inicial} Hasta ${3:final} Con Paso ${4:paso} Hacer",
             "\t${5:instrucciones}",
-            "FinPara"
+            "Fin Para"
 		],
 		"description": "Crear un bucle Para con hacer"
     },
@@ -140,7 +140,7 @@
 		"body": [
 			"Para Cada ${1:elemento} De ${2:arreglo} Hacer",
             "\t${3:instrucciones}",
-            "FinPara"
+            "Fin Para"
 		],
 		"description": "Crear un bucle Para Cada"
 	},
@@ -158,7 +158,7 @@
 		"body": [
 			"Mientras (${1:condicion}) Hacer",
             "\t${2:instrucciones}",
-            "FinMientras"
+            "Fin Mientras"
 		],
 		"description": "Crear un bucle Mientras"
 	},
@@ -167,7 +167,7 @@
 		"body": [
 			"Mientras (${1:condicion}) Hacer",
             "\t${2:instrucciones}",
-            "FinMientras"
+            "Fin Mientras"
 		],
 		"description": "Crear un bucle Mientras con hacer"
     },
@@ -196,7 +196,7 @@
             "\tConstructor(${2:parametro})",
             "\t\t${3:instrucciones}",
             "\tFinConstructor",
-            "FinClase"
+            "Fin Clase"
 		],
 		"description": "Definir una clase"
 	},
@@ -207,7 +207,7 @@
             "\tConstructor(${2:parametro})",
             "\t\t${3:instrucciones}",
             "\tFinConstructor",
-            "FinClase"
+            "Fin Clase"
 		],
 		"description": "Definir una clase con hacer"
 	},
@@ -218,7 +218,7 @@
             "\tConstructor(${3:parametro})",
             "\t\t${4:instrucciones}",
             "\tFinConstructor",
-            "FinClase"
+            "Fin Clase"
 		],
 		"description": "Definir una clase que extiende de otra clase"
 	},
@@ -229,7 +229,7 @@
             "\tConstructor(${3:parametro})",
             "\t\t${4:instrucciones}",
             "\tFinConstructor",
-            "FinClase"
+            "Fin Clase"
 		],
 		"description": "Definir una clase que extiende de otra clase con hacer"
 	},
@@ -238,7 +238,7 @@
 		"body": [
 			"Estructura ${1:nombreEstructura}",
             "\t${2:instrucciones}",
-            "FinEstructura"
+            "Fin Estructura"
 		],
 		"description": "Definir una estructura"
 	},
@@ -247,7 +247,7 @@
 		"body": [
 			"Estructura ${1:nombreEstructura}",
             "\t${2:instrucciones}",
-            "FinEstructura"
+            "Fin Estructura"
 		],
 		"description": "Definir una estructura con hacer"
 	}

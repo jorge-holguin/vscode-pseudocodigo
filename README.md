@@ -1,5 +1,18 @@
 # Pseudocode
 
+<!-- GitHub badges -->
+
+[![Created by jorge-holguin](https://img.shields.io/badge/Created%20by-jorge--holguin-556bf2?style=for-the-badge&logo=github&logoColor=white&labelColor=101827)](https://github.com/jorge-holguin)
+[![Stars](https://img.shields.io/github/stars/jorge-holguin/vscode-pseudocodigo?style=social)](https://github.com/jorge-holguin/vscode-pseudocodigo/stargazers)
+[![Fork](https://img.shields.io/github/forks/jorge-holguin/vscode-pseudocodigo?style=social)](https://github.com/jorge-holguin/vscode-pseudocodigo/forks)
+[![GitHub commits](https://img.shields.io/github/commit-activity/t/jorge-holguin/vscode-pseudocodigo?style=social&logo=github)](https://github.com/jorge-holguin/vscode-pseudocodigo/commits)
+[![Pull requests](https://img.shields.io/github/issues-pr/jorge-holguin/vscode-pseudocodigo?style=social&logo=github)](https://github.com/jorge-holguin/vscode-pseudocodigo/pulls)
+[![License](https://img.shields.io/github/license/jorge-holguin/vscode-pseudocodigo?color=dddddd&labelColor=000000)](https://github.com/jorge-holguin/vscode-pseudocodigo/blob/main/LICENSE)
+[![Top Language](https://img.shields.io/github/languages/top/jorge-holguin/vscode-pseudocodigo?logo=github&logoColor=%23007ACC&label=JavaScript)](https://www.javascript.com/)
+![PRs](https://img.shields.io/badge/PRs-bienvenidos-ff69b4.svg?style=shields)
+[![Known Vulnerabilities](https://snyk.io/test/github/jorge-holguin/vscode-pseudocodigo/badge.svg)](https://snyk.io/test/github/jorge-holguin/vscode-pseudocodigo)
+
+
 Una extensión simple para el resaltado de sintaxis de pseudocódigo genérico.
 
 El resaltado de sintaxis existe para múltiples variantes de palabras clave de pseudocódigo comunes, lo que te permite usar tu propio estilo sin limitarte a un formato específico.

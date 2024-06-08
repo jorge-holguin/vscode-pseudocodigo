@@ -45,7 +45,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.pseudocode",
-					"match": "(?i)\\b(si|sino|intentar|capturar|escribir|imprimir|leer|mientras|para|paracada|repetir|proceso|funcion|clase|estructura|mod|y|o|no|retornar|romper|continuar|extends|estatico|publico|privado|caso|hacer|fin)\\b"
+					"match": "(?i)\\b(si|sino|intentar|capturar|entero|real|caracter|escribir|definir|imprimir|leer|mientras|para|paracada|repetir|proceso|funcion|clase|estructura|mod|y|o|como|no|retornar|romper|continuar|extends|estatico|publico|privado|caso|hacer|fin)\\b"
 				},
 				{
 					"name": "keyword.operator.logical.pseudocode",

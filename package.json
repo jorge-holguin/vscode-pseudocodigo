@@ -4,7 +4,7 @@
     "description": "Una extensión para resaltar la sintaxis del pseudocodigo en español",
     "publisher": "jorgeholguin",
     "icon": "images/icon.png",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.55.0"
     },
